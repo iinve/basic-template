@@ -1,31 +1,57 @@
 .footer {
-  padding: 40px 0;
+  padding: 60px 0 20px 0;
   text-align: center;
   .top_section {
-    button {
-      border: none;
-      outline: none;
-      background: none;
-      font-size: 18px;
-    }
-  }
-  .bottom_section {
-    margin-top: 40px;
-
+    display: flex;
+    justify-content: center;
     ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       li {
-        width: 60px;
+        width: 80px;
         margin: 0 16px;
         img {
           width: 100%;
           display: block;
+          border-radius: 50%;
         }
       }
     }
+  }
+  .bottom_section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    button {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ab9587;
+      transition: transform 0.3s ease;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease;
+        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+        animation: heartbeat 1.5s ease-in-out infinite both;
+      }
+      &:hover {
+        opacity: 0.6;
+      }
+      &:hover svg {
+        transform: translateX(10px);
+      }
+    }
+
     p {
       font-size: 14px;
       color: #7d7d7d;
@@ -40,5 +66,74 @@
       width: 60px;
       display: block;
     }
+  }
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }

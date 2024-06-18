@@ -1,11 +1,18 @@
 .about_event {
   padding: 60px 200px;
+  text-align: center;
   p {
     line-height: 1.5em;
-    text-align: justify;
+    text-align: center;
   }
   .date {
-    background: #ab9587;
+    background: linear-gradient(
+      90deg,
+      rgba(171, 149, 135, 1) 0%,
+      rgb(255, 243, 216) 100%
+    );
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     width: 300px;
     margin: auto;
     display: flex;
