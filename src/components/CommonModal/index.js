@@ -22,7 +22,9 @@ const CommonModal = ({ show, handleModal }) => {
       centered
     >
       <Modal.Header closeButton className={Style.modalHeader}>
-        <Modal.Title>More designs are available!</Modal.Title>
+        <Modal.Title>
+          <h4>More designs are available!</h4>
+        </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <div className={Style.wrapper}>
@@ -31,9 +33,11 @@ const CommonModal = ({ show, handleModal }) => {
             url="https://youtu.be/eDKmY30ICho"
             width="100%"
             onReady={handleReady}
+            className={Style.player}
             style={{
               display: loading ? "none" : "block",
             }}
+            height="200px"
           />
         </div>
       </Modal.Body>

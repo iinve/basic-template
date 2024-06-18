@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<ComingSoon />} />
 
         <Route
-          path="/wedding/:couples"
+          path="/wedding/arun-anjali"
           element={
             <Home
               data={{

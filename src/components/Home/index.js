@@ -8,8 +8,8 @@ import { Assets } from "../../assets/assets";
 import { useParams } from "react-router-dom";
 
 const Home = ({ data }) => {
-  const { couples } = useParams();
-  const [groom, bride] = couples.split("-");
+  let groom = data?.groomName;
+  let bride = data?.brideName;
   return (
     <>
       <Helmet>

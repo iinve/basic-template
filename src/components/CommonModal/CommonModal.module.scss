@@ -1,13 +1,20 @@
 .modalHeader {
   border-bottom: none !important;
+  h4 {
+    @media (max-width: 500px) {
+      font-size: 16px;
+    }
+  }
 }
 .modalFooter {
   border-top: none !important;
 }
 .button {
+  font-size: 14px !important;
   border: 1px solid #ab9587;
   color: #ab9587;
   &_main {
+    font-size: 14px !important;
     background-color: #ab9587;
     border: 1px solid #ab9587;
     &:hover {
@@ -21,4 +28,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.player {
+  height: 200px;
 }
