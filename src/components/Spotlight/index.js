@@ -4,11 +4,13 @@ import Style from "./Spotlight.module.scss";
 import Header from "../Header";
 
 const Spotlight = () => {
+  let background =
+    window.innerWidth > 500 ? Assets?.Banner : Assets?.Banner_mob;
   return (
     <>
       <main
         className={Style.main}
-        style={{ "--bg-image": `url(${Assets?.Banner})` }}
+        style={{ "--bg-image": `url(${background})` }}
       >
         <Header />
         <div className={Style.content}>

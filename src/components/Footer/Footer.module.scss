@@ -54,17 +54,26 @@
 
     p {
       font-size: 14px;
-      color: #7d7d7d;
+      color: #d2d2d2;
     }
   }
   .uder_footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 560px) {
+      flex-direction: column;
+    }
     img {
       opacity: 0.5;
       width: 60px;
       display: block;
+      @media (max-width: 560px) {
+        margin-bottom: 20px;
+      }
+    }
+    p {
+      color: #b6b6b6;
     }
   }
 }

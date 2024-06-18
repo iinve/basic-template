@@ -1,9 +1,22 @@
 .about_event {
   padding: 60px 200px;
   text-align: center;
+  @media (max-width: 860px) {
+    padding: 60px 150px;
+  }
+  @media (max-width: 700px) {
+    padding: 60px 100px;
+  }
+  @media (max-width: 560px) {
+    padding: 60px 50px;
+  }
   p {
     line-height: 1.5em;
     text-align: center;
+    @media (max-width: 560px) {
+      font-size: 14px;
+      text-align: justify;
+    }
   }
   .date {
     background: linear-gradient(
@@ -20,9 +33,15 @@
     padding: 20px;
     margin-top: 50px;
     border-radius: 10px;
+    @media (max-width: 560px) {
+      width: 250px;
+    }
     span {
       font-size: 24px;
       font-weight: 600;
+      @media (max-width: 560px) {
+        font-size: 22px;
+      }
     }
   }
 }

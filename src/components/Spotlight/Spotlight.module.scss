@@ -1,6 +1,6 @@
 .main {
   background-image: var(--bg-image);
-  height: 100vh;
+  height: 100dvh;
   background-size: cover;
   background-position: center;
   .content {
@@ -10,7 +10,7 @@
     display: flex;
     align-items: end;
     justify-content: center;
-    height: calc(100vh - 80px);
+    height: calc(100dvh - 80px);
   }
   .name {
     bottom: 40px;
@@ -19,6 +19,12 @@
     h6 {
       font-size: 60px;
       margin: 0;
+      @media (max-width: 860px) {
+        font-size: 50px;
+      }
+      @media (max-width: 500px) {
+        font-size: 40px;
+      }
     }
     span {
     }
