@@ -8,7 +8,7 @@ const AboutEvent = ({ data }) => {
           We are overjoyed to announce that{" "}
           <b>
             {data?.groomName} & {data?.brideName}
-          </b>
+          </b>{" "}
           will be exchanging vows and celebrating their love on{" "}
           <b>{data?.date}</b> at <b>{data?.time}</b> at <b>{data?.venue}</b>.
           Following the ceremony, please join us for a joyful reception filled
