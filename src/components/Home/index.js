@@ -5,31 +5,28 @@ import AboutEvent from "../About";
 import Footer from "../Footer";
 import { Helmet } from "react-helmet";
 import { Assets } from "../../assets/assets";
+import { useParams } from "react-router-dom";
 
 const Home = ({ data }) => {
+  const { couples } = useParams();
+  const [groom, bride] = couples.split("-");
   return (
     <>
       <Helmet>
-        <title>
-          {data?.groomName + " & " + data?.brideName} Wedding Invitation | iinve
-        </title>
+        <title>{groom + " & " + bride} Wedding Invitation | iinve</title>
         <meta name="description" content="We are ready to get married." />
         <meta
           property="og:title"
-          content={`  ${
-            data?.groomName + " & " + data?.brideName
-          } Wedding Invitation | iinve`}
+          content={`  ${groom + " & " + bride} Wedding Invitation | iinve`}
         />
         <meta
           property="og:url"
-          content={`https://www.iinve.com/wedding/${data?.groomName}-${data?.brideName}`}
+          content={`https://www.iinve.com/wedding/${groom}-${bride}`}
         />
         <meta property="og:image" content={Assets?.Banner_mob} />
         <meta
           name="twitter:title"
-          content={`  ${
-            data?.groomName + " & " + data?.brideName
-          } Wedding Invitation | iinve`}
+          content={`  ${groom + " & " + bride} Wedding Invitation | iinve`}
         />
         <meta
           name="twitter:description"
