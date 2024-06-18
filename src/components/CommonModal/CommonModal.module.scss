@@ -1,0 +1,24 @@
+.modalHeader {
+  border-bottom: none !important;
+}
+.modalFooter {
+  border-top: none !important;
+}
+.button {
+  border: 1px solid #ab9587;
+  color: #ab9587;
+  &_main {
+    background-color: #ab9587;
+    border: 1px solid #ab9587;
+    &:hover {
+      background-color: #5f4c41;
+      border: 1px solid #ab9587;
+    }
+  }
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

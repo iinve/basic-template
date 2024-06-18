@@ -4,12 +4,12 @@ import Spotlight from "../Spotlight";
 import AboutEvent from "../About";
 import Footer from "../Footer";
 
-const Home = () => {
+const Home = ({ data }) => {
   return (
     <>
-      <Spotlight />
-      <AboutEvent />
-      <Footer />
+      <Spotlight data={data} />
+      <AboutEvent data={data} />
+      <Footer data={data} />
     </>
   );
 };

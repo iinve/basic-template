@@ -3,10 +3,30 @@
     margin: 0;
     list-style: none;
     box-sizing: border-box;
+    font-family: "Cinzel", serif;
 }
 
 .wrapper {
     width: 90%;
     max-width: 1300px;
     margin: auto;
+}
+
+.no-data {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+
+
+}
+
+.no-data img {
+    width: 100px;
+    display: block;
+    margin-bottom: 20px;
 }

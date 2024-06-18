@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Style from "./Header.module.scss";
 import { Assets } from "../../assets/assets";
 

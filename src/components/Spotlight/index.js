@@ -3,7 +3,8 @@ import { Assets } from "../../assets/assets";
 import Style from "./Spotlight.module.scss";
 import Header from "../Header";
 
-const Spotlight = () => {
+const Spotlight = ({ data }) => {
+  console.log(data);
   let background =
     window.innerWidth > 500 ? Assets?.Banner : Assets?.Banner_mob;
   return (
@@ -16,7 +17,9 @@ const Spotlight = () => {
         <div className={Style.content}>
           <div className={Style.name}>
             <span>The Wedding of</span>
-            <h6>Arun & Anjali</h6>
+            <h6>
+              {data?.groomName} & {data?.brideName}
+            </h6>
           </div>
         </div>
 
