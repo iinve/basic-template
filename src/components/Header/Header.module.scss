@@ -1,0 +1,24 @@
+.header {
+  height: 80px;
+  width: 90%;
+  right: 50%;
+  transform: translateX(50%);
+  border-radius: 10px;
+  position: fixed;
+  top: 10px;
+  //   background: #75757545;
+  //   backdrop-filter: blur(10px);
+  z-index: 9999;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    width: 70px;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}

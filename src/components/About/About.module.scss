@@ -1,0 +1,21 @@
+.about_event {
+  padding: 60px 200px;
+  p {
+    line-height: 1.5em;
+    text-align: justify;
+  }
+  .date {
+    background: #ab9587;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    span {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+}
