@@ -1,7 +1,7 @@
 import React from "react";
 import { Assets } from "../../assets/assets";
 import Style from "./Footer.module.scss";
-import { ChevronRightIcon } from "@radix-ui/react-icons";
+import { FaAngleRight } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
         <div className={Style.bottom_section}>
           <button>
             see other templates
-            <ChevronRightIcon />
+            <FaAngleRight />
           </button>
         </div>
         <div className={Style.uder_footer}>
