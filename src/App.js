@@ -32,7 +32,6 @@ function App() {
           }
         />
 
-        <Route path="demo" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
