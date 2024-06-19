@@ -18,7 +18,7 @@ function App() {
           element={
             <Home
               data={{
-                groomName: "Arun",
+                groomName: "Arun joe",
                 brideName: "Anjali",
                 venue: "Rose Hill Auditorium",
                 date: "10 May 2024",

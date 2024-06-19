@@ -14,26 +14,21 @@ const Home = ({ data }) => {
   return (
     <>
       <Helmet>
-        <title>{`${groom} & ${bride} Wedding Invitation | iinve`}</title>
-        <meta name="description" content="We are ready to get married." />
         <meta
           property="og:title"
-          content={`${groom} & ${bride} ---Wedding Invitation | iinve`}
-        />
-        <meta
-          property="og:url"
-          content={`https://www.iinve.com/wedding/${groom}-${bride}`}
-        />
-        <meta property="og:image" content={Assets.Banner_mob} />
-        <meta
-          name="twitter:title"
           content={`${groom} & ${bride} Wedding Invitation | iinve`}
         />
         <meta
-          name="twitter:description"
+          property="og:description"
           content="We are ready to get married."
         />
-        <meta name="twitter:image" content={Assets.Banner_mob} />
+        <meta property="og:site_name" content="iinve.com" />
+        <meta property="og:url" content="https://iinve.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={Assets?.Banner} />
+
+        <title>{`${groom} & ${bride} Wedding Invitation | iinve`}</title>
+        <meta name="description" content="We are ready to get married." />
       </Helmet>
       <Spotlight data={data} />
       <AboutEvent data={data} />
