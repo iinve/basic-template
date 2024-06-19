@@ -1,6 +1,6 @@
 import React from "react";
 import StarBackground from "../StarBackground";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 const NotFound = () => {
   return (
