@@ -1,12 +1,18 @@
 import React from "react";
 import StarBackground from "../StarBackground";
+import { Helmet } from "react-helmet";
 
 const NotFound = () => {
   return (
-    <div className="no-data">
-      <StarBackground />
-      404 found
-    </div>
+    <>
+      <Helmet>
+        <title>iinve - Page not found</title>
+      </Helmet>
+      <div className="no-data">
+        <StarBackground />
+        404 found
+      </div>
+    </>
   );
 };
 
