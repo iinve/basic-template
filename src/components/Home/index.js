@@ -14,21 +14,42 @@ const Home = ({ data }) => {
   return (
     <>
       <Helmet>
+        <title>Arun & Anjali Wedding Invitation | iinve</title>
+        <meta name="title" content="Arun & Anjali Wedding Invitation | iinve" />
+        <meta
+          name="description"
+          content="Arun and Anjali are getting married and joyfully invite you to celebrate their wedding."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="iinve.com" />
         <meta
           property="og:title"
-          content={`${groom} & ${bride} Wedding Invitation | iinve`}
+          content="Arun & Anjali Wedding Invitation | iinve"
         />
         <meta
           property="og:description"
-          content="We are ready to get married."
+          content="Arun and Anjali are getting married and joyfully invite you to celebrate their wedding."
         />
-        <meta property="og:site_name" content="iinve.com" />
-        <meta property="og:url" content="https://iinve.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content={Assets?.Banner} />
+        <meta
+          property="og:image"
+          content="https://metatags.io/images/meta-tags.png"
+        />
 
-        <title>{`${groom} & ${bride} Wedding Invitation | iinve`}</title>
-        <meta name="description" content="We are ready to get married." />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="iinve.com" />
+        <meta
+          property="twitter:title"
+          content="Arun & Anjali Wedding Invitation | iinve"
+        />
+        <meta
+          property="twitter:description"
+          content="Arun and Anjali are getting married and joyfully invite you to celebrate their wedding."
+        />
+        <meta
+          property="twitter:image"
+          content="https://metatags.io/images/meta-tags.png"
+        />
       </Helmet>
       <Spotlight data={data} />
       <AboutEvent data={data} />
