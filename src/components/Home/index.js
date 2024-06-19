@@ -18,7 +18,7 @@ const Home = ({ data }) => {
         <meta name="description" content="We are ready to get married." />
         <meta
           property="og:title"
-          content={`${groom} & ${bride} Wedding Invitation | iinve`}
+          content={`${groom} & ${bride} ---Wedding Invitation | iinve`}
         />
         <meta
           property="og:url"
