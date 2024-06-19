@@ -1,10 +1,10 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import Header from "../Header";
 import Spotlight from "../Spotlight";
 import AboutEvent from "../About";
 import Footer from "../Footer";
 import { Assets } from "../../assets/assets";
+import { Helmet } from "react-helmet-async";
 
 const Home = ({ data }) => {
   const { groomName, brideName } = data || {};

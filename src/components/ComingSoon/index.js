@@ -1,8 +1,8 @@
 import React from "react";
 import StarBackground from "../StarBackground";
 import { Assets } from "../../assets/assets";
-import { Helmet } from "react-helmet";
 import SEOImage from "../../assets/images/og-image.png";
+import { Helmet } from "react-helmet-async";
 
 const ComingSoon = () => {
   return (
