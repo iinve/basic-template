@@ -21,7 +21,7 @@ const Footer = ({ data }) => {
         </div>
         <div className={Style.bottom_section}>
           <button onClick={handleModal}>
-            see other templates
+            see more templates
             <FaAngleRight />
           </button>
         </div>
