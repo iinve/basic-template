@@ -3,6 +3,7 @@ import { Assets } from "../../assets/assets";
 import Style from "./Footer.module.scss";
 import { FaAngleRight } from "react-icons/fa";
 import CommonModal from "../CommonModal";
+import { Link } from "react-router-dom";
 
 const Footer = ({ data }) => {
   const [show, setShow] = useState(false);
@@ -27,7 +28,10 @@ const Footer = ({ data }) => {
         </div>
         <div className={Style.uder_footer}>
           <img src={Assets?.Logo_black} alt="Logo" />
-          <p>&copy;2024 all right reserved iinve</p>
+          <p>
+            &copy;2024 all right reserved{" "}
+            <Link to={"https://iinve.com"}>iinve</Link>
+          </p>
         </div>
       </div>
       <CommonModal show={show} handleModal={handleModal} />

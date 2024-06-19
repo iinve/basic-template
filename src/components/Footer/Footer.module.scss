@@ -75,6 +75,14 @@
     }
     p {
       color: #b6b6b6;
+      a {
+        color: #444444;
+        text-decoration: none;
+        transition: 0.3s ease;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
     }
   }
 }
